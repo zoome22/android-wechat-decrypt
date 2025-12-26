@@ -1,6 +1,7 @@
 # WeChat Database Decryptor
 
 WeChat(위챗) 암호화된 데이터베이스를 복호화하는 도구입니다.
+2025.12.26 update
 
 ## 기능
 
