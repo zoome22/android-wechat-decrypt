@@ -1,4 +1,3 @@
-# android-wechat-decrypt
 # WeChat Database Decryptor
 
 WeChat(위챗) 암호화된 데이터베이스를 복호화하는 도구입니다.
@@ -67,7 +66,7 @@ python wechat_decrypt.py /path/to/com.tencent.mm --quiet
 wechat-db-decryptor/
 ├── README.md              # 문서
 ├── requirements.txt       # Python 패키지
-├── wechat_decrypt.py      # 메인 스크립트 (이것만 실행)
+├── wechat_decrypt.py      # 메인 스크립트 
 └── .gitignore
 ```
 
@@ -94,7 +93,7 @@ python wechat_decrypt.py ./com.tencent.mm --extract-key-only
 # 출력: Key: 1277f69
 
 # 그 키로 복호화
-python wechat_decrypt.py ./EnMicroMsg.db --key 1277f69
+python wechat_decrypt.py ./EnMicroMsg.db --key 1234567
 ```
 
 ## 주의사항
@@ -102,16 +101,6 @@ python wechat_decrypt.py ./EnMicroMsg.db --key 1277f69
 - 이 도구는 **교육 및 연구 목적**으로만 사용하세요
 - 자신의 데이터에만 사용하세요
 - 타인의 개인정보 침해는 법적 책임을 수반합니다
-
-## 문제 해결
-
-### "keyinfo.bin not found" 오류
-- WeChat 앱 폴더 경로가 올바른지 확인하세요
-- 루팅된 기기에서 추출한 데이터인지 확인하세요
-
-### "HMAC 불일치" 경고
-- 일부 페이지에서 발생할 수 있으며, 대부분 정상 작동합니다
-- 모든 페이지에서 발생하면 키가 잘못되었을 수 있습니다
 
 ### SQLite 파일이 열리지 않음
 - `--try-all` 옵션으로 다른 키들을 시도해보세요
