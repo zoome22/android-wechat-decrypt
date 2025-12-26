@@ -102,9 +102,3 @@ python wechat_decrypt.py ./EnMicroMsg.db --key 1234567
 - 자신의 데이터에만 사용하세요
 - 타인의 개인정보 침해는 법적 책임을 수반합니다
 
-### SQLite 파일이 열리지 않음
-- `--try-all` 옵션으로 다른 키들을 시도해보세요
-
-## 라이선스
-
-MIT License
